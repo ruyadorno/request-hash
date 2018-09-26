@@ -72,7 +72,8 @@
   "scripts": {
     "pretest": "eslint .",
     "precommit": "lint-staged",
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "jest --coverage"
   },
   "repository": "ruyadorno/request-hash",
   "jest": {

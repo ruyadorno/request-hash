@@ -5,4 +5,5 @@ os:
 node_js:
   - 'node'
   - 'lts/*'
+script: 'npm run test:ci'
 after_script: cat ./coverage/lcov.info | coveralls
