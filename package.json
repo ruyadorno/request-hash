@@ -1,14 +1,13 @@
 {
   "name": "request-hash",
-  "version": "0.0.0",
-  "description": "Generate a hash from an express request",
-  "homepage": "",
+  "version": "1.0.0",
+  "description": "Generate a hash from an express Request or http.IncomingMessage",
   "author": {
     "name": "Ruy Adorno",
     "url": "http://ruyadorno.com"
   },
   "files": [
-    "lib"
+    "lib/index.js"
   ],
   "main": "lib/index.js",
   "keywords": [
@@ -16,8 +15,13 @@
     "request",
     "hash",
     "sha",
+    "uuid",
+    "http",
+    "https",
+    "IncomingMessage",
+    "md5",
     "crypto",
-    "uuid"
+    "fingerprint"
   ],
   "devDependencies": {
     "coveralls": "^3.0.0",

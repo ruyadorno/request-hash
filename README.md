@@ -8,6 +8,13 @@
 
 > Generate a hash from an express request
 
+## Features
+
+- Highly configurable
+  - Options to hand-pick headers / cookies to use in order to create the hash
+  - BYO serialization, encoding and hash algorithm with sane defaults
+- Works with any [http.IncomingMessage](https://nodejs.org/api/http.html#http_class_http_incomingmessage) or [express.Request](http://expressjs.com/en/api.html#req)
+
 ## Installation
 
 ```sh
@@ -16,11 +23,23 @@ $ npm install --save request-hash
 
 ## Usage
 
-```js
-const requestHash = require('request-hash');
+Here's a simple example using express Hello world:
 
-requestHash('Rainbow');
+```js
+const requestHash = require('request-hash')();
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => res.send(requestHash(req)))
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 ```
+
+## Alternatives
+
+- [incoming-message-hash](https://github.com/flickr/incoming-message-hash)
+
 ## License
 
 MIT © [Ruy Adorno](http://ruyadorno.com)
