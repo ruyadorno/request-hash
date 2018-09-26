@@ -74,5 +74,8 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cookie": "^0.3.1"
+  }
 }
