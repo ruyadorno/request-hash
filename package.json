@@ -1,6 +1,6 @@
 {
   "name": "request-hash",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate a hash from an express Request or http.IncomingMessage",
   "author": {
     "name": "Ruy Adorno",
